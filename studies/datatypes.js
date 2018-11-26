@@ -24,7 +24,7 @@
  * 
  * Undefined
  * 
- * A declared variable with no other assigned value will equal undefined.
+ * The value of a declared variable that has not yet been assigned another value.
  * 
  * 
  * NaN
@@ -42,8 +42,7 @@
  * 
  * Null
  * 
- * Null is used to both indicate an absence of any other value and to stopping the
- * code with an error.
+ * Null is used to indicate an absence of any other value.
  * 
  * 
  * Complex datatypes
@@ -53,47 +52,55 @@
  * Arrays are collections of values arranged in a zero-indexed list. Arrays are 
  * indicated with brackets. Array values are accessed using the index number in 
  * bracket notation:
+ */
  
  let numbers = [1, 2, 3, 4, 5];
  
- console.log(numbers[0]); ==> 1
- console.log(numbers[0] + numbers[4]); ==> 6
+ console.log(numbers[0]); // ==> 1
+ console.log(numbers[0] + numbers[4]); //==> 6
  
- * 
+ /** 
  * Objects
  * 
  * Objects are collections of key-value pairs contained inside curly braces. 
  * Object values are accessed using either dot- or bracket notation:
+ */
  
  let student = {name: 'Frank', age: 45, friends: ['Gaby', 'Milly', 'Mills']};
  
- console.log(student.name); ==> "Frank"
- console.log(student['age']); ==> 45
+ console.log(student.name); //==> "Frank"
+ console.log(student['age']); //==> 45
  
  let x = 'friends';
- console.log(student[x][1]); ==> "Milly"
+ console.log(student[x][1]); //==> "Milly"
  
- *
+ /**
  * Functions
  * 
  * Functions are blocks of code that can be assigned to variables and reused.
- * 
- * 
- * Simple vs. complex datatypes
+ */
+ 
+ function sayHi(nameString) {
+  console.log('Hi, ' + nameString + '!');
+ }
+ 
+ sayHi('Milly'); // ==> "Hi, Milly!" 
+  
+ /** Simple vs. complex datatypes
  * 
  * Simple datatypes are immutable and are referenced by value. Each simple datatype
- * is equal to a single value that cannot be changed. Complex datatypes are mutable
- * and are stored by reference. Complex datatypes can be referenced by more than 
+ * is a single value that cannot be changed. Complex datatypes are mutable and
+ * are stored by reference. Complex datatypes can be referenced by more than 
  * one variable.
+ */
  
  let letters = ['a', 'b', 'c', 'd'];
  let alphabet = letters;
  alphabet.push('e');
- console.log(letters[letters.length - 1]); ==> "e"
+ console.log(letters[letters.length - 1]); //==> "e"
  
  let letter = 'f';
  let initial = letter;
  letter = 'z';
- console.log(initial); ==> "f"
- console.log(letter); ==> "z"
- */
+ console.log(initial); //==> "f"
+ console.log(letter); //==> "z"

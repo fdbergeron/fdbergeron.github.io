@@ -1,4 +1,4 @@
-/**
+  /**
  * Loops
  * 
  * 
@@ -10,24 +10,26 @@
  * 
  * A While loop runs as long as its condition evaluates to true. Once the condition 
  * evaluates to false, the next code block will run.
- 
+ */
  let count = 0;
  while (count < 11) {
      console.log(count);
      count++;
  }
- 
- * This loop sets <count> to 0, then logs each number from 0 through 10. This
+
+ /** This loop sets <count> to 0, then logs each number from 0 through 10. This
  * loop depends on the value of <count>: once the condition evaluates to false, 
  * the loop stops.
- 
- let count = 10;
+ */
+
+ count = 10;
  while (count > -1) {
   console.log(count);
   count--;
  }
- 
- * This loop logs each number from 10 to 0 backwards.
+
+
+ /** This loop logs each number from 10 to 0 backwards.
  * 
  * 
  * For loops
@@ -45,6 +47,7 @@
  * 
  * Iteration: The change to the value of the iterator variable for each time the
  * code block runs. 
+ */
  
  let cats = ['Milly', 'Daisy', 'Sister', 'Alice', 'Mamacat', 'Babycat', 'Lulu'];
  
@@ -52,13 +55,14 @@
   console.log(cats[index]);
  }
  
- * This loop logs each element of array <cats>. 
+ /** This loop logs each element of array <cats>.
+  */
  
  for (let index = cats.length - 1; index > -1; index--) {
   console.log(cats[index]);
  }
  
- * This loop logs each element of array <cats> in reverse order.
+ /** This loop logs each element of array <cats> in reverse order.
  * 
  * 
  * For In loops
@@ -73,6 +77,7 @@
  * 
  * Object: Should be the variable that references the collection object that will
  * be looped over.
+ */
  
  let student = {name: 'Frank', age: 45, friends: ['Gaby', 'Milly']};
  
@@ -80,18 +85,19 @@
   console.log(student[key]);
  }
  
- * This loop logs each value of collection object <student>.
+ /** This loop logs each value of collection object <student>.
  * 
  * 
  * Infinite loops
- * 
- let count = 0;
- while (count > -1) {
-  console.log('This never stops');
-  count++;
- }
+ */
  
- * If a loop is set up without a definite endpoint, an infinite loop occurs.
+ // count = 0;
+ // while (count > -1) {
+ //  console.log('This never stops');
+ //  count++;
+ // }
+ 
+ /** If a loop is set up without a definite endpoint, an infinite loop occurs.
  * This will crash the browser. To avoid this, it's important to make sure that
  * the ending condition can eventually evaluate to true.
  */

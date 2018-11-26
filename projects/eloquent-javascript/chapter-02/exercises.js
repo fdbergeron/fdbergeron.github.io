@@ -42,8 +42,50 @@ function fizzBuzz(num1, num2) {
 // drawChessboard //////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function drawChessboard() {
-
+function drawChessboard(number) {
+  let resultString = '';
+  if (number % 2 === 0){
+		//even board
+		let oddUnit = ' #';
+		let evenUnit = '# ';
+		let count = 0;
+		let oddFinalString = '';
+		let evenFinalString = '';
+		while (count < number / 2) {
+			oddFinalString += oddUnit;
+			evenFinalString += evenUnit;
+			count++;
+		}
+		count = 0;
+		while (count < number / 2) {
+			resultString += oddFinalString + '\n';
+			resultString += evenFinalString + '\n';
+			count++;
+		}
+		} else {
+			//odd board
+			let oddUnit = ' #';
+			let evenUnit = '# ';
+			let count = 0;
+			let oddFinalString = '';
+			let evenFinalString = '';
+			while (count < number / 2 - 1) {
+			  oddFinalString += oddUnit;
+			  evenFinalString += evenUnit;
+			  count++;
+			  
+			}
+			count = 0;
+			while (count < number / 2 - 1) {
+			  resultString += oddFinalString + ' \n';
+			  resultString += evenFinalString + '#\n';
+			  count++;
+			  
+			}
+			resultString += oddFinalString + ' \n';
+			
+		}
+	console.log(resultString);
 }
 
 ////////////////////////////////////////////////////////////////////////////////

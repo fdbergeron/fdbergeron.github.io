@@ -1,0 +1,26 @@
+{
+  "name": "lodown-fdbergeron",
+  "version": "1.0.0",
+  "description": "Frank's Operation Spark Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- test/ -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdbergeron/fdbergeron.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdbergeron/fdbergeron.github.io/issues"
+  },
+  "homepage": "https://github.com/fdbergeron/fdbergeron.github.io#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "i": "^0.3.6",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.1"
+  }
+}
